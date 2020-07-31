@@ -1,0 +1,30 @@
+{
+  "name": "@cromarmot/algo",
+  "version": "1.0.0",
+  "description": "Algorithms library with controllable time complexity.",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CroMarmot/algo.git"
+  },
+  "author": "cromarmot <yexiaorain@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha --reporter spec"
+  },
+  "types": "dist/index.d.ts",
+  "prepublish": "tsc",
+  "keywords": [
+    "isEven"
+  ],
+  "bugs": {
+    "url": "https://github.com/CroMarmot/algo/issues"
+  },
+  "homepage": "https://github.com/CroMarmot/algo",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.0",
+    "typescript": "^3.9.7"
+  }
+}

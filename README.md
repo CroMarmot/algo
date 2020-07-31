@@ -1,2 +1,15 @@
 # algo
-Controllable time complexity of the algorithms library
+
+the algorithms library with controllable time complexity.
+
+## Install
+
+```
+yarn add @cromarmot/algo
+```
+
+## isEven
+
+```js
+const { isEven } = require('@cromarmot/algo');
+```
