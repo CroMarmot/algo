@@ -19,7 +19,13 @@ const{ CompManager } = require("@cromarmot/algo");
 
 const cm = CompManager.createCompManager();
 
-let isEven = (v) => cm.f('isEven','Constant',v);
+const isEven = (v) => cm.f('isEven','Constant',v);
+
+console.log(isEven(1)); // false
+console.log(isEven(2)); // true
+console.log(isEven(3)); // true
+
+const isEvenON = (v) => cm.f('isEven','N',v);
 
 console.log(isEven(1)); // false
 console.log(isEven(2)); // true
