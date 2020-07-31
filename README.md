@@ -12,8 +12,9 @@ yarn add @cromarmot/algo
 
 ## Functions
 
-### isEven(Constant)
+### isEven
 
+#### Constant
 ```js
 const{ CompManager } = require("@cromarmot/algo");
 
@@ -24,12 +25,20 @@ const isEven = (v) => cm.f('isEven','Constant',v);
 console.log(isEven(1)); // false
 console.log(isEven(2)); // true
 console.log(isEven(3)); // true
+```
+
+#### O(N)
+
+```js
+const{ CompManager } = require("@cromarmot/algo");
+
+const cm = CompManager.createCompManager();
 
 const isEvenON = (v) => cm.f('isEven','N',v);
 
-console.log(isEven(1)); // false
-console.log(isEven(2)); // true
-console.log(isEven(3)); // true
+console.log(isEvenON(1)); // false
+console.log(isEvenON(2)); // true
+console.log(isEvenON(3)); // true
 ```
 
 ### isNumberOne(NLogN)

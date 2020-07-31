@@ -1,6 +1,6 @@
 {
   "name": "@cromarmot/algo",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "Algorithms library with controllable time complexity.",
   "main": "dist/index.js",
   "repository": {
@@ -17,7 +17,8 @@
   "types": "dist/index.d.ts",
   "prepublish": "tsc",
   "keywords": [
-    "isEven"
+    "isEven",
+    "isNumberOne"
   ],
   "bugs": {
     "url": "https://github.com/CroMarmot/algo/issues"
