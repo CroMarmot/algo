@@ -1,6 +1,6 @@
 # algo
 
-[![CircleCI](https://circleci.com/gh/CroMarmot/algo/tree/master.svg?style=svg)](https://circleci.com/gh/CroMarmot/algo?branch=master)
+[![CircleCI](https://circleci.com/gh/CroMarmot/algo/tree/master.svg?style=svg)](https://circleci.com/gh/CroMarmot/algo?branch=master) ![Node.js CI](https://github.com/CroMarmot/algo/workflows/Node.js%20CI/badge.svg?branch=master)
 
 the algorithms library with controllable time complexity.
 
