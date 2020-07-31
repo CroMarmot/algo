@@ -24,7 +24,7 @@ const isEven = (v) => cm.f('isEven','Constant',v);
 
 console.log(isEven(1)); // false
 console.log(isEven(2)); // true
-console.log(isEven(3)); // true
+console.log(isEven(3)); // false
 ```
 
 #### O(N)
@@ -38,7 +38,7 @@ const isEvenON = (v) => cm.f('isEven','N',v);
 
 console.log(isEvenON(1)); // false
 console.log(isEvenON(2)); // true
-console.log(isEvenON(3)); // true
+console.log(isEvenON(3)); // false
 ```
 
 ### isNumberOne(NLogN)
@@ -50,9 +50,9 @@ const cm = CompManager.createCompManager();
 
 const isNumberOne = (v) => cm.f('isNumberOne', 'NLogN', v);
 
-console.log(isNumberOne(1));
-console.log(isNumberOne(2));
-console.log(isNumberOne(3));
+console.log(isNumberOne(1)); // true
+console.log(isNumberOne(2)); // false
+console.log(isNumberOne(3)); // false
 ```
 
 ## Test
