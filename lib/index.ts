@@ -1,4 +1,5 @@
+import { isEven } from './isEven';
 
-export function isEven(v:number):boolean{
-  return v % 2 == 0;
+export {
+  isEven
 }
