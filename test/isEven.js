@@ -1,7 +1,12 @@
 'use strict';
 let expect = require('chai').expect;
-let { isEven } = require('../dist/index.js');
-describe('isEven Test', () => {
+
+const { CompManager } = require("../dist/index.js");
+
+const cm = CompManager.createCompManager();
+
+const isEven = (v) => cm.f('isEven','Constant',v);
+describe('isEven Constant Test', () => {
     it('1 is not even', () => {
         expect(isEven(1)).to.equal(false);
     });
@@ -9,3 +14,4 @@ describe('isEven Test', () => {
         expect(isEven(2)).to.equal(true);
     });
 });
+

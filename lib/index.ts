@@ -1,5 +1,5 @@
-import { isEven } from './isEven';
+import { CompManager} from "./CompManager";
 
 export {
-  isEven
+    CompManager
 }

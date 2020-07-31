@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@cromarmot/is-number-one@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@cromarmot/is-number-one/-/is-number-one-1.0.2.tgz#1430b0df9055765db081cddef7f2ec66894d0610"
+  integrity sha512-Lt/nxsy/7EaY3WKrNJ8aESo9BuDsZyEcXtrM9Na9NZhi9JcuKXGPmNpzBtsinGp5IN9DCXs1R2YmmNpw3KxjOQ==
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
