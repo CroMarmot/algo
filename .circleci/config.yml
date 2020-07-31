@@ -11,7 +11,20 @@ jobs:
           steps:
             - run: npm install
             - run: npm run build
-            - run: npm test
+            - run:
+                name: Run tests
+                command: npm run test
+            - run:
+                name: Generate coverage report
+                command: npm run cover
+            - store_test_results:
+                path: test-results
+            - store_artifacts: # Save tests results as artifacts
+                path: test-results.xml
+                prefix: tests
+            - store_artifacts: # Save coverage reports as artifacts
+                path: coverage
+                prefix: coverage
 workflows:
     build-and-test:
       jobs:
