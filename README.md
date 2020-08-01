@@ -41,6 +41,20 @@ console.log(isEvenON(2)); // true
 console.log(isEvenON(3)); // false
 ```
 
+#### O(Random)
+
+```js
+const{ CompManager } = require("@cromarmot/algo");
+
+const cm = CompManager.createCompManager();
+
+const isEvenR = (v) => cm.f('isEven','Random',v);
+
+console.log(isEvenR(1)); // false
+console.log(isEvenR(2)); // true
+console.log(isEvenR(3)); // false
+```
+
 ### isNumberOne(NLogN)
 
 ```js

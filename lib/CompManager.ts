@@ -1,7 +1,7 @@
 import Funcs = CromarmotAlgoLib.Funcs;
 import Complexity = CromarmotAlgoLib.Complexity;
 import Fn = CromarmotAlgoLib.Fn;
-import {isEven, isEvenON} from "./isEven";
+import {isEven, isEvenON, isEvenRandom} from "./isEven";
 import isNumberOne = require('@cromarmot/is-number-one');
 
 class CompManager{
@@ -14,6 +14,7 @@ class CompManager{
   constructor(){
       this.reg('isEven','Constant',isEven);
       this.reg('isEven','N',isEvenON);
+      this.reg('isEven','Random',isEvenRandom);
       this.reg('isNumberOne','NLogN',isNumberOne);
   }
 
