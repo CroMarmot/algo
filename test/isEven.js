@@ -1,12 +1,10 @@
 'use strict';
-let expect = require('chai').expect;
 
-const { CompManager } = require("../dist/index.js");
+const { expect } = require('chai');
+const { describe } = require("mocha");
 
-const cm = CompManager.createCompManager();
-
-const isEven = (v) => cm.f('isEven','Constant',v);
 describe('isEven Constant Test', () => {
+    const isEven = require("../dist/fp/isEven/constant").default;
     it('1 is not even', () => {
         expect(isEven(1)).to.equal(false);
     });
@@ -15,8 +13,8 @@ describe('isEven Constant Test', () => {
     });
 });
 
-const isEvenON = (v) => cm.f('isEven','N',v);
 describe('isEven N Test', () => {
+    const isEvenON = require("../dist/fp/isEven/n").default;
     it('1 is not even', () => {
         expect(isEvenON(1)).to.equal(false);
     });
@@ -31,8 +29,8 @@ describe('isEven N Test', () => {
     });
 });
 
-const isEvenR = (v) => cm.f('isEven','Random',v);
 describe('isEven Random Test', () => {
+    const isEvenR = require("../dist/fp/isEven/random").default;
     it('1 is not even', () => {
         expect(isEvenR(1)).to.equal(false);
     });
